@@ -10,3 +10,6 @@ LeNet5 is a small network, it contains the basic modules of deep learning: convo
 <img width="563" height="287" alt="image" src="https://github.com/user-attachments/assets/6812d5b6-9bb9-4732-b2c2-3eb7ec3a2d6a" />
 
 In our case, the model final layers make use of the '_ReLu_' activation function instead of '_tanh_'. Also, we have utilised stride function within the preceding convolutional layers instead of the quantized MaxPool function in Brevitas.
+
+
+### **_Kindly note, this repository is subject to changes._**

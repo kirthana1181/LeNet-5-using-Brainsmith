@@ -59,7 +59,7 @@ design_space:
 #    - "apply_folding_config"
     - "minimize_bit_width"
     - "generate_estimate_reports" 
-      # Now after successfully generating the DSE for the encoder part of T5_small model, we try to execute the steps
+      # Now after successfully generating the DSE for the encoder part of LeNet-5 model, we try to execute the steps
       # starting from 'hw_codegen' to 'measure_rtlsim_performance'
       # HLS/RTL Generation
     - "hw_codegen"

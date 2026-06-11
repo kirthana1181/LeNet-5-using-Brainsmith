@@ -1,4 +1,4 @@
-## Key points and steps in order to run the automated flow in Brainsmith
+## Key points and steps to run the automated flow in Brainsmith
 1. We generate the input ONNX Model, by building the CNN using Brevitas functions, for every
 layer of the ML Model.
 2. Upon running the python script, the Quantized ONNX file gets generated which is used by

@@ -39,9 +39,18 @@ Within this folder, all the intended output files, for every build step in the w
 
 <img width="1447" height="586" alt="Screenshot from 2026-06-23 11-31-22" src="https://github.com/user-attachments/assets/962b523d-da8a-4b45-b359-616d57854d5f" />
 
-In the image shown here, the output directory is '_results_run12_', which further consists of the log file which records the build flow ('_brainsmith.log_'), the onnx files (since, they've been mentioned to be saved in this file path within the model build script) and root folder stores all the intermediate buils steps file within a folder nested in it, called '_intermediate_models_'. Under the root folder, the input and output onnx files are also stored by the file name: '_input.onnx_' and '_output.onnx_'. The estimate reports are stored within '_reports_' and the final stitched IP is stored within '_stitched_ip_'. 
+In the image shown here, the output directory is '_results_run12_', which further consists of the log file which records the build flow ('_brainsmith.log_'), the onnx files (since, they've been mentioned to be saved in this file path within the model build script) and root folder stores all the intermediate build steps file within a folder nested in it, called '_intermediate_models_'. Under the root folder, the input and output onnx files are also stored by the file name: '_input.onnx_' and '_output.onnx_'. The estimate reports are stored within '_reports_' and the final stitched IP is stored within the folder named '_stitched_ip_'. 
 
 <img width="1680" height="242" alt="Screenshot from 2026-06-23 11-50-59" src="https://github.com/user-attachments/assets/f54970e1-031f-47a4-a0c9-f0944015b5d7" />
+
+
+
+# Key points before implementing
+
+1. We generate the input ONNX Model, by building the intended model using Brevitas functions, for every layer of the Model.
+2. Upon running the python script for model build or model import, the Quantized ONNX file gets generated which is used as the input ONNX file to Brainsmith to produce the RTL.
+3. The blueprint file is used to run the compiler to build our model's stitched IP(our targetted output, as stated within the blueprint file).
+4. This runs the automated flow of RTL generation till the final steps (which is the “measure_rtl_sim_performace”) which produces the stitched IP as the final output as per the target output mentioned in the blueprint file (here, 'lenet.yaml'). The target/output type could be either of these : 'generate_estimate_reports', 'rtl', or 'bitfile'. 
 
 
 

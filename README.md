@@ -11,3 +11,26 @@ LeNet5 is a small network, it contains the basic modules of deep learning: convo
 
 In our case, the model final layers make use of the '_ReLu_' activation function instead of '_tanh_'. Also, we have utilised stride function within the preceding convolutional layers instead of the quantized MaxPool function in Brevitas.
 
+## Installation requirements for Brainsmith Compiler
+
+1. Ubuntu 22.04+ (primary development/testing platform)
+2. Vivado Design Suite 2024.2
+3. Cmake for V80 shell integration (optional, depends on the applications target HW resource)
+4. Python 3.11.*
+
+Ensure 'smith' command line is set-up, which is used to run the compiler and create our streamlined dataflow-accelerators (DFA).
+
+## Brainsmith build flow
+
+PyTorch → ONNX → Hardware Kernels → HLS/RTL → IP Cores → Bitfile (output depends on final step defined in the blueprint file (.yaml)).
+
+<img width="1850" height="823" alt="Screenshot from 2026-06-23 12-06-00" src="https://github.com/user-attachments/assets/f65f8418-b745-4d01-98dd-42e1b1a71dee" />
+
+Our Brainsmith project has been created with the command:
+
+    brainsmith project init lenet
+
+and the configurations are as shown, which is obtained using the command: 
+
+    brainsmith project info --finn
+to display along with the finn compiler configurations. 

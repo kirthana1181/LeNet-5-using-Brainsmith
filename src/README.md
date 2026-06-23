@@ -50,7 +50,12 @@ In the image shown here, the output directory is '_results_run12_', which furthe
 1. We generate the input ONNX Model, by building the intended model using Brevitas functions, for every layer of the Model.
 2. Upon running the python script for model build or model import, the Quantized ONNX file gets generated which is used as the input ONNX file to Brainsmith to produce the RTL.
 3. The blueprint file is used to run the compiler to build our model's stitched IP(our targetted output, as stated within the blueprint file).
-4. This runs the automated flow of RTL generation till the final steps (which is the “measure_rtl_sim_performace”) which produces the stitched IP as the final output as per the target output mentioned in the blueprint file (here, 'lenet.yaml'). The target/output type could be either of these : 'generate_estimate_reports', 'rtl', or 'bitfile'. 
+4. This runs the automated flow of RTL generation till the final steps (which is the “measure_rtl_sim_performace”) which produces the stitched IP as the final output as per the target output mentioned in the blueprint file (here, 'lenet.yaml'). The target/output type could be either of these : 'generate_estimate_reports', 'rtl', or 'bitfile'.
+
+
+## The custom steps defined for our LeNet-5 Model
+
+
 
 
 

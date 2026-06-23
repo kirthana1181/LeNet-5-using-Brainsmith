@@ -5,7 +5,7 @@ LeNet-5, from the paper Gradient-Based Learning Applied to Document Recognition,
 
 ## Structure of the Network
 
-LeNet5 is a small network, it contains the basic modules of deep learning: convolutional layer, pooling layer, and full link layer. It is the basis of other deep learning models. Here we analyze LeNet5 in depth. At the same time, through example analysis, deepen the understanding of the convolutional layer and pooling layer.
+LeNet5 is a small network, it contains the basic modules of deep learning: convolutional layer, pooling layer, and full link layer. It is the basis of other deep learning models.
 
 <img width="563" height="287" alt="image" src="https://github.com/user-attachments/assets/6812d5b6-9bb9-4732-b2c2-3eb7ec3a2d6a" />
 

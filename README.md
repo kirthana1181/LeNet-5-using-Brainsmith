@@ -6,7 +6,7 @@ https://github.com/microsoft/brainsmith.git
 Key Stages in the generation of final output:
 - Model transformation: Converting ONNX operations to hardware kernels
 - Design space exploration: Determining parallelization factors (PE/SIMD)
-- Code generation: HLS (C/C++) and/or RTL (i.e. hardware code generation)
+- Code generation: HLS (C++) and/or RTL (i.e. hardware code generation)
 - IP Packaging: Create Vivado IP Cores
 - Simulation: Verifying correctness with RTL simulation in Vivado (of RTL file/bitfile)
 

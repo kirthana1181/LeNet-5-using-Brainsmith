@@ -1,4 +1,16 @@
-# LeNet - 5 Implementation using Brainsmith
+# About Brainsmith
+
+Brainsmith is a compiler developed jointly by AMD and Microsoft, which serves the purpose of transformation of ONNX models of the neural networks to optimized dataflow accelerators for FPGAs through automated design space exploration. In this repository we have tried to generate RTL design and the final stitched of the LeNet-5 Model.
+https://github.com/microsoft/brainsmith.git
+
+Key Stages in the generation of final output:
+- Model transformation: Converting ONNX operations to hardware kernels
+- Design space exploration: Determining parallelization factors (PE/SIMD)
+- Code generation: HLS (C/C++) and/or RTL (i.e. hardware code generation)
+- IP Packaging: Create Vivado IP Cores
+- Simulation: Verifying correctness with RTL simulation in Vivado (of RTL file/bitfile)
+
+## LeNet - 5 Implementation using Brainsmith
 
 <img width="1862" height="438" alt="image" src="https://github.com/user-attachments/assets/1800c4d4-a4c3-4fa1-ae81-fca528112703" />
 LeNet-5, from the paper Gradient-Based Learning Applied to Document Recognition, is a very efficient convolutional neural network for handwritten character recognition.

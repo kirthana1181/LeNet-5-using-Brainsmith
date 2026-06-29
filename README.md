@@ -29,7 +29,7 @@ In our case, the model final layers make use of the '_ReLu_' activation function
 3. Cmake for V80 shell integration (optional, depends on the applications target HW resource)
 4. Python 3.11.*
 
-Ensure 'smith' command line is set-up, which is used to run the compiler and create our streamlined dataflow-accelerators (DFA).
+Ensure 'smith' command line has been installed, which is used to run the compiler and create our streamlined dataflow-accelerators (DFA).
 
 ## Brainsmith build flow
 

@@ -45,3 +45,5 @@ and the configurations are as shown, which is obtained using the command:
 
     brainsmith project info --finn
 to display along with the finn compiler configurations. 
+
+References: https://microsoft.github.io/brainsmith/latest/getting-started/
